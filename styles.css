@@ -1,11 +1,27 @@
 html {
     box-sizing: border-box;
-  }
-  *, *:before, *:after {
-    box-sizing: inherit;
-  }
+}
 
-  * {
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+* {
     margin: 0;
     padding: 0;
-  }
+}
+
+.main-grid {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 1fr 4fr;
+    height: 100vh;
+}
+
+.sidebar {
+    grid-row: span 2;
+}
+
+.main-grid > div {
+    border: 1px solid;
+}
