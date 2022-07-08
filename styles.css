@@ -21,7 +21,7 @@ html {
     font-family: 'Mulish', sans-serif;
 }
 
-.sidebar {
+nav {
     grid-row: span 2;
     display: grid;
     grid-template-rows: 6rem repeat(5, 3rem) 6rem repeat(3, 3rem);
@@ -30,18 +30,18 @@ html {
     padding-top: 48px;
 }
 
-.sidebar img {
+nav img {
     width: 24px;
     height: 24px;
     filter: invert(71%) sepia(6%) saturate(458%) hue-rotate(195deg) brightness(95%) contrast(85%);
 }
 
-.sidebar a:first-of-type img {
+nav a:first-of-type img {
     width: 48px;
     height: 48px;
 }
 
-.sidebar a {
+nav a {
     display: grid;
     height: 3rem;
     text-decoration-line: none;
@@ -51,16 +51,16 @@ html {
 }
 
 
-.sidebar a:first-of-type {
+nav a:first-of-type {
     font-size: 1.375rem;
     padding-left: 24px;
 }
 
-.sidebar a div {
+nav a div {
     align-self: center;
 }
 
-.sidebar .link-wrapper {
+nav .link-wrapper {
     display: grid;
     grid-template-columns: 1fr 5fr;
     gap: 10px;
@@ -68,20 +68,20 @@ html {
     color: inherit;
 }
 
-.sidebar .color-fill {
+nav .color-fill {
     filter: brightness(0) saturate(100%) invert(93%) sepia(12%) saturate(1765%) hue-rotate(184deg) brightness(100%) contrast(103%);
 }
 
-.sidebar .scale {
+nav .scale {
     transform: scale(1.1);
 }
 
-.sidebar a:hover {
+nav a:hover {
     border-left-color: #dde2ff;
     color: #dde2ff;
     background-color: #3e4049;
 }
 
-.main-grid > div:nth-child(n+2) {
-    border: 1px solid;
+.main-grid > :nth-child(n+2) {
+    border: 1px solid blue;
 }
