@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
+
 html {
     box-sizing: border-box;
 }
@@ -16,6 +18,7 @@ html {
     grid-template-columns: 1fr 5fr;
     grid-template-rows: 1fr 4fr;
     min-height: 100vh;
+    font-family: 'Mulish', sans-serif;
 }
 
 .sidebar {
