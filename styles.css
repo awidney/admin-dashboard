@@ -73,6 +73,12 @@ html {
     transform: scale(1.1);
 }
 
+.sidebar a:hover {
+    border-left-color: #dde2ff;
+    color: #dde2ff;
+    background-color: #3e4049;
+}
+
 .main-grid > div:nth-child(n+2) {
     border: 1px solid;
 }
