@@ -16,7 +16,7 @@ html {
 .main-grid {
     display: grid;
     grid-template-columns: 1fr 5fr;
-    grid-template-rows: 1fr 4fr;
+    grid-template-rows: 25vh 1fr;
     min-height: 100vh;
     font-family: 'Mulish', sans-serif;
 }
@@ -27,6 +27,7 @@ nav {
     grid-template-rows: 6rem repeat(5, 3rem) 6rem repeat(3, 3rem);
     background-color: #363740;
     font-size: 1rem;
+    font-weight: bold;
     padding-top: 3rem;
 }
 
@@ -87,6 +88,7 @@ header {
     grid-template: 1fr 2fr / 2fr 1fr;
     background-color: #75778a;
     box-shadow: 0 3px 3px rgba(0, 0, 0, 0.3);
+    z-index: 1;
 }
 
 form {
@@ -225,4 +227,73 @@ button {
 
 button:hover {
     transform: scale(1.1);
+}
+
+.content-grid {
+    display: grid;
+    grid-template: 10% 50% 40% / 70% 30%;
+    padding: 1rem 3rem 4rem 3rem;
+    background-color: #9ea0ad;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template: repeat(3, calc(100% / 3)) / 50% 50%;
+    grid-column: 1;
+    grid-row: 2 / 4;
+    gap: 1.2rem;
+}
+
+.projects-header {
+    align-self: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 1px 1px 2px #000;
+    cursor: default;
+}
+
+.projects-grid article {
+    display: grid;
+    gap: 1rem;
+    background-color: #f2f3f4;
+    padding: 1.5rem;
+    border-radius: .5rem;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, .3);
+    cursor: pointer;
+}
+
+.projects-grid article:hover {
+    background-color: #fff;
+}
+
+.projects-grid h3 {
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.projects-grid .icon-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 24px);
+    gap: 1.5rem;
+    justify-self: end;
+}
+
+.projects-grid img {
+    width: 24px;
+}
+
+.projects-grid img:nth-of-type(1):hover {
+    filter: invert(81%) sepia(49%) saturate(3989%) hue-rotate(6deg) brightness(103%) contrast(107%);
+    transform: scale(1.25);
+}
+
+.projects-grid img:nth-of-type(2):hover {
+    filter: invert(58%) sepia(13%) saturate(1370%) hue-rotate(169deg) brightness(97%) contrast(91%);
+    transform: scale(1.25);
+}
+
+.projects-grid img:nth-of-type(3):hover {
+    filter: invert(41%) sepia(18%) saturate(1242%) hue-rotate(147deg) brightness(95%) contrast(89%);
+    transform: scale(1.25);
 }
