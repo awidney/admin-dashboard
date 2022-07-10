@@ -84,15 +84,15 @@ nav a:hover {
 
 header {
     display: grid;
-    grid-template: 1fr 1fr / 2fr 1fr;
-    background-color: #a4a6b3;
+    grid-template: 1fr 2fr / 2fr 1fr;
+    background-color: #75778a;
 }
 
 form {
     position: relative;
     top: 55px;
     left: 48px;
-    width: calc(70% - 48px);
+    width: calc(90% - 48px);
     height: min-content;
 }
 
@@ -119,11 +119,50 @@ input[type=search]:focus {
     gap: 1rem;
     border-radius: 1rem;
     padding: 5px 10px;
-    background-color: white;
+    background-color: #fff;
     box-shadow: 0 2px 6px rgba(23, 23, 23, 0.5);
 }
 
 .search-wrapper img {
     width: 24px;
     filter: invert(71%) sepia(6%) saturate(458%) hue-rotate(195deg) brightness(95%) contrast(85%);
+}
+
+.profile-grid {
+    align-self: end;
+    justify-self: center;
+    display: grid;
+    grid-template-columns: 32px 1fr 1fr;
+    gap: 1rem;
+    justify-items: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    position: relative;
+    top: 31px;
+}
+
+.profile-grid img[alt="Notification icon"] {
+    filter: invert();
+    cursor: pointer;
+}
+
+.profile-grid img[alt="Notification icon"]:hover {
+    transform: scale(1.1);
+}
+.profile-grid img[alt="Avatar"] {
+    width: 5rem;
+    cursor: pointer;
+    border: 2px solid #75778a;
+    border-radius: 50%;
+}
+
+.profile-grid img[alt="Avatar"]:hover {
+    border-color: #363740;
+}
+
+.username {
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
 }
