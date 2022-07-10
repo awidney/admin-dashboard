@@ -151,15 +151,11 @@ input[type=search]:focus {
 .profile-grid img[alt="Notification icon"]:hover {
     transform: scale(1.1);
 }
+
 .profile-grid img[alt="Avatar"] {
     width: 5rem;
     cursor: pointer;
-    border: 2px solid #75778a;
-    border-radius: 50%;
-}
-
-.profile-grid img[alt="Avatar"]:hover {
-    border-color: #363740;
+    filter: drop-shadow(0 0 1px #fff);
 }
 
 .username {
