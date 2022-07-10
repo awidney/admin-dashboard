@@ -166,3 +166,38 @@ input[type=search]:focus {
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
     cursor: pointer;
 }
+
+.handle-grid {
+    display: grid;
+    grid-template-columns: 90px 3fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 5px 30px;
+    width: fit-content;
+    position: relative;
+    top: 36px;
+    left: 48px;
+    height: max-content;
+    font-weight: bold;
+    color: #fff;
+}
+
+.handle-grid img {
+    grid-row: 1 / 3;
+    cursor: pointer;
+    filter: drop-shadow(0 0 1px #fff);
+}
+
+.greeting {
+    align-self: end;
+    font-size: 18px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    cursor: default;
+}
+
+.handle {
+    font-size: 24px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    width: fit-content;
+    height: fit-content;
+    cursor: pointer;
+}
